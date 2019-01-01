@@ -9,6 +9,8 @@ bash Miniconda3-latest-Linux-x86_64.sh
 sudo apt update
 sudo apt install libgl1-mesa-glx
 
-conda install msgpack-python sqlAlchemy tensorflow=1.11.0 keras scikit-learn numpy scipy matplotlib pandas holoviews geoviews bokeh datashader param jupyter
+conda install msgpack-python sqlAlchemy tensorflow=1.11.0 keras scikit-learn numpy scipy jupyter
+conda install -c pyviz/label/dev pyviz
+pyviz fetch-data --path .
 
 rm Miniconda3-latest-Linux-x86_64.sh
